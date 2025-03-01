@@ -40,30 +40,11 @@ function updateDateAndTaskOnHand() {
 // Update background color when click theme change btn
 
 document.getElementById("theme-btn").addEventListener("click", function () {
-    let colors = [
-        "bg-slate-200",
-        "bg-blue-300",
-        "bg-red-400",
-        "bg-green-500",
-        "bg-purple-600",
-        "bg-yellow-700",
-        "bg-amber-800",
-        "bg-orange-900",
-    ];
-    let body = document.querySelector("body");
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
 
-    let currentClass = body.className.split(" ")[1];
-
-    let currentColorIndex = colors.indexOf(currentClass);
-
-    let nextColorIndex = currentColorIndex + 1;
-    if (nextColorIndex >= colors.length) {
-        nextColorIndex = 0;
-    }
-    let nextColor = colors[nextColorIndex];
-
-    body.classList.remove(currentClass);
-    body.classList.add(nextColor);
+    document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
 });
 
 // Update task assigned and completed when click on "complete" btn
