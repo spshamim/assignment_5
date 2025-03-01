@@ -102,30 +102,35 @@ for (let i = 0; i < buttons.length; i++) {
 
         button.disabled = true;
         button.classList.add("cursor-not-allowed");
-        button.classList.add("bg-gray-300");
+        button.classList.add("bg-gray-400");
         button.classList.remove("hover:bg-[#1F38D3]");
-        alert("Task completed!");
-
-        // if all tasks are completed
-        if (taskOnHandConverted - 1 === 0) {
-            alert("All tasks are completed!");
-        }
 
         // Add activity log
         const parentOfActivity = document.getElementById("activity-log");
         const newActivity = document.createElement("div");
         newActivity.classList.add(
-            "bg-[#F4F7FF]",
+            "bg-[#e7edfc]",
             "p-3",
             "text-xs",
-            "rounded-xl"
+            "rounded-xl",
+            "font-semibold"
         );
 
         // Get the task title
-        const title = button.parentElement.parentElement.querySelector("#task-title").innerText;
+        const title =
+            button.parentElement.parentElement.querySelector(
+                "#task-title"
+            ).innerText;
 
-        newActivity.innerText = `You have Complete The Task ${title} at ${getCurrentTime()} .`;
+        newActivity.innerText = `You have Completed The Task ${title} at ${getCurrentTime()} .`;
         parentOfActivity.appendChild(newActivity);
+
+        alert("Board updated successfully!");
+
+        // if all tasks are completed
+        if (taskOnHandConverted - 1 === 0) {
+            alert("Congrats! You have completed all the current tasks.");
+        }
     });
 }
 

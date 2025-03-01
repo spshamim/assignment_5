@@ -30,14 +30,14 @@
             };
         </script>
     </head>
-    <body class="font-poppins bg-slate-300">
+    <body class="font-poppins bg-slate-200">
         <header
             class="max-w-screen-2xl bg-white sm:mx-28 mx-12 mt-3 rounded-2xl shadow-md"
         >
             <!-- Container -->
             <div class="flex justify-between items-center px-5 py-3">
                 <div class="flex items-center">
-                    <div class="w-10 h-10 mr-3">
+                    <div class="w-8 h-8 mr-3">
                         <img src="./asset/logo.png" alt="Logo" class="w-full" />
                     </div>
                     <h3 class="text-2xl">
@@ -48,7 +48,7 @@
                 <!-- Right Side -->
                 <button
                     onclick="redirectToDesk()"
-                    class="bg-blue-700 px-4 py-3 rounded-xl text-white hover:bg-blue-800"
+                    class="bg-blue-700 px-4 py-3 text-sm rounded-lg text-white hover:bg-blue-800"
                 >
                     Back to Desk
                 </button>
@@ -56,78 +56,149 @@
         </header>
 
         <main class="max-w-screen-2xl sm:mx-28 mx-12 mt-3 mb-4">
-            <h3 class="text-2xl font-semibold text-center mb-5">Blogs</h3>
+            <h3 class="text-2xl font-semibold text-center my-5">Blogs</h3>
 
             <div class="bg-white rounded-xl mb-4">
                 <div
-                    class="border-b-2 border-slate-200 border-dashed p-5 font-semibold text-xl"
+                    class="border-b-2 border-slate-300 border-dashed p-5 font-semibold text-xl"
                 >
                     Question-1: What are the different ways to select an element
                     in the DOM?
                 </div>
                 <div class="p-5 text-lg text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Exercitationem rem, quibusdam possimus libero eligendi eaque
-                    id voluptatibus tempora dolor modi ex. Officia unde,
-                    possimus fugit dolore alias iste sit. Voluptatum.
+                    ✍️ There are several ways to select an element in the DOM.
+                    Some of the most common ways are:
+                    <code
+                        class="block bg-slate-200 p-3 rounded-xl overflow-x-auto mt-3"
+                    >
+                        document.getElementById("id"); ➜ select an element by
+                        it's ID<br />
+                        document.getElementsByClassName("class"); ➜ select
+                        elements by class, it returns a <b>HTMLCollection</b
+                        ><br />
+                        document.getElementsByTagName("tag"); ➜ select elements
+                        by tag name, it returns a <b>HTMLCollection</b><br />
+                        document.querySelector("selector"); ➜ select the first
+                        matching element, it used as <b>CSS Selector</b> <br />
+                        document.querySelectorAll("selector"); ➜ select all
+                        matching elements, it returns a <b>NodeList</b><br />
+                    </code>
                 </div>
             </div>
 
             <div class="bg-white rounded-xl mb-4">
                 <div
-                    class="border-b-2 border-slate-200 border-dashed p-5 font-semibold text-xl"
+                    class="border-b-2 border-slate-300 border-dashed p-5 font-semibold text-xl"
                 >
                     Question-2: What is the difference between innerHTML,
                     innerText, and textContent ?
                 </div>
                 <div class="p-5 text-lg text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Exercitationem rem, quibusdam possimus libero eligendi eaque
-                    id voluptatibus tempora dolor modi ex. Officia unde,
-                    possimus fugit dolore alias iste sit. Voluptatum.
+                    ✍️ Difference between innerHTML, innerText, and textContent
+                    are as follows:
+
+                    <div class="overflow-x-auto w-full mt-3">
+                        <table class="w-full min-w-max">
+                            <tr class="bg-slate-200 text-gray-700 text-left">
+                                <th>Property</th>
+                                <th>innerHTML</th>
+                                <th>innerText</th>
+                                <th>textContent</th>
+                            </tr>
+                            <tr>
+                                <td>Get the content</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Set the content</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Include tags</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Include hidden text</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                                <td>Yes</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
 
             <div class="bg-white rounded-xl mb-4">
                 <div
-                    class="border-b-2 border-slate-200 border-dashed p-5 font-semibold text-xl"
+                    class="border-b-2 border-slate-300 border-dashed p-5 font-semibold text-xl"
                 >
                     Question-3: What is event delegation in the DOM?
                 </div>
                 <div class="p-5 text-lg text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Exercitationem rem, quibusdam possimus libero eligendi eaque
-                    id voluptatibus tempora dolor modi ex. Officia unde,
-                    possimus fugit dolore alias iste sit. Voluptatum.
+                    ✍️ Event delegation is a technique in which we attach a
+                    single event listener to a parent element that will fire for
+                    all children matching a selector, whether they are present
+                    now or added in the future. <br />
+                    ✍️ Useful for dynamically added elements. <br />
+                    ✍️ It helps to improve performance by reducing the number of
+                    event listeners. <br />
                 </div>
             </div>
 
             <div class="bg-white rounded-xl mb-4">
                 <div
-                    class="border-b-2 border-slate-200 border-dashed p-5 font-semibold text-xl"
+                    class="border-b-2 border-slate-300 border-dashed p-5 font-semibold text-xl"
                 >
                     Question-4: What is event bubbling in the DOM?
                 </div>
                 <div class="p-5 text-lg text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Exercitationem rem, quibusdam possimus libero eligendi eaque
-                    id voluptatibus tempora dolor modi ex. Officia unde,
-                    possimus fugit dolore alias iste sit. Voluptatum.
+                    ✍️ Event bubbling is a mechanism in which an event is fired
+                    at the deepest (target) element first and then propagates
+                    upward to its ancestors (i.e. parents, grandparents etc.)
+                    <br />
+                    ✍️ i.e. Clicking a <code>button</code> inside a
+                    <code>div</code> can trigger both the button's click event
+                    and the div's click event. <br />
+                    ✍️ It is the default behavior of the browser. <br />
+                    ✍️ It can be stopped using
+                    <code>event.stopPropagation()</code> method. <br />
+                    <br />
                 </div>
             </div>
 
             <div class="bg-white rounded-xl mb-4">
                 <div
-                    class="border-b-2 border-slate-200 border-dashed p-5 font-semibold text-xl"
+                    class="border-b-2 border-slate-300 border-dashed p-5 font-semibold text-xl"
                 >
                     Question-5: How do you create, add, and remove elements
                     using JavaScript?
                 </div>
                 <div class="p-5 text-lg text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Exercitationem rem, quibusdam possimus libero eligendi eaque
-                    id voluptatibus tempora dolor modi ex. Officia unde,
-                    possimus fugit dolore alias iste sit. Voluptatum.
+                    ✍️ To create, add, and remove elements using JavaScript, we
+                    can use the following methods:
+                    <code
+                        class="block bg-slate-200 p-3 rounded-xl overflow-x-auto mt-3"
+                    >
+                        let parentElement = document.getElementById("parentID");
+                        ➜ select the parent element<br />
+                        let element = document.createElement("tag"); ➜ create a
+                        new element with the specified tag name<br />
+                        <br />
+                        parentElement.appendChild(element); ➜ add a new child
+                        element to the parent element<br />
+                        parentElement.insertBefore(newElement,
+                        referenceElement); ➜ insert a new child element before a
+                        reference element as a child of the parent element<br /><br />
+                        parentElement.removeChild(element); ➜ remove a child
+                        element from the parent element<br />
+                        element.remove(); ➜ remove the element from the DOM<br />
+                    </code>
                 </div>
             </div>
         </main>

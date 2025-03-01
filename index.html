@@ -35,9 +35,11 @@
             class="max-w-screen-2xl bg-white sm:mx-28 mx-12 mt-3 rounded-2xl shadow-md"
         >
             <!-- Container -->
-            <div class="flex justify-between items-center px-5 py-3">
+            <div
+                class="flex flex-col md:flex-row md:justify-between items-center px-5 py-3 gap-4 md:gap-0"
+            >
                 <div class="flex items-center">
-                    <div class="w-10 h-10 mr-3">
+                    <div class="w-8 h-8 mr-3">
                         <img src="./asset/logo.png" alt="Logo" class="w-full" />
                     </div>
                     <h3 class="text-2xl">
@@ -48,25 +50,25 @@
                 <!-- Right Side -->
                 <div class="flex items-center">
                     <div
-                        class="flex items-center mr-8 bg-slate-200 px-4 py-2 rounded-3xl"
+                        class="flex items-center mr-4 md:mr-8 bg-[#e7edfc] px-3 py-1 rounded-3xl"
                     >
-                        <div class="w-6 h-6 mr-4">
+                        <div class="w-5 h-5 mr-4">
                             <img
                                 src="./asset/checkbox.png"
                                 alt="Checkbox"
                                 class="w-full"
                             />
                         </div>
-                        <h3 class="text-xl font-semibold" id="task-completed">
+                        <h3 class="text-lg font-semibold" id="task-completed">
                             24
                         </h3>
                     </div>
 
                     <button
-                        class="bg-slate-200 p-2 rounded-full"
+                        class="bg-[#e7edfc] p-2 rounded-full"
                         id="theme-btn"
                     >
-                        <div class="w-7 h-7">
+                        <div class="w-6 h-6">
                             <img
                                 src="./asset/theme-btn.png"
                                 alt="Theme Button"
@@ -84,12 +86,12 @@
                 <div class="bg-white rounded-2xl w-full md:w-[75%]">
                     <!-- Top -->
                     <div
-                        class="flex flex-col md:flex-row justify-between items-center w-full gap-4 border-b-2 border-dashed border-slate-200 px-6 py-3"
+                        class="flex flex-col md:flex-row justify-between items-center w-full gap-4 border-b-2 border-dashed border-slate-300 px-6 py-3"
                     >
                         <div
-                            class="flex items-center bg-[#F4F7FF] w-full md:w-[25%] rounded-xl p-6 gap-6"
+                            class="flex items-center bg-[#e7edfc] w-full md:w-[25%] rounded-xl p-6 gap-6"
                         >
-                            <div class="w-7 h-7">
+                            <div class="w-5 h-5">
                                 <img
                                     src="./asset/checkbox.png"
                                     alt="Checkbox"
@@ -98,7 +100,7 @@
 
                             <div>
                                 <h5 class="text-xs">Task Assigned</h5>
-                                <h4 class="font-bold text-xl" id="task-on-hand">
+                                <h4 class="font-bold text-lg" id="task-on-hand">
                                     5
                                 </h4>
                             </div>
@@ -108,7 +110,7 @@
                             class="flex items-center bg-gradient-to-br from-[#3752fd] via-[#6c7ffa] to-[#9ba8f8] w-full md:w-[50%] rounded-xl px-7 py-4 gap-6 cursor-pointer"
                             id="discover-btn"
                         >
-                            <div class="w-11 h-11">
+                            <div class="w-10 h-10">
                                 <img
                                     src="./asset/board.png"
                                     alt="Activity"
@@ -123,9 +125,9 @@
                         </div>
 
                         <div
-                            class="flex items-center bg-[#F4F7FF] w-full md:w-[25%] rounded-xl px-6 py-6 gap-6"
+                            class="flex items-center bg-[#e7edfc] w-full md:w-[25%] rounded-xl px-6 py-6 gap-6"
                         >
-                            <div class="w-7 h-7">
+                            <div class="w-5 h-5">
                                 <img
                                     src="./asset/calender.png"
                                     alt="Calender"
@@ -147,14 +149,14 @@
                         class="w-full px-5 py-3 grid grid-cols-1 md:grid-cols-3 gap-3"
                         id="task-container"
                     >
-                        <div class="bg-[#F4F7FF] rounded-xl px-4 py-2">
+                        <div class="bg-[#e7edfc] rounded-xl px-4 py-2">
                             <h4
                                 class="text-xs py-2 bg-white rounded-xl w-24 text-center mb-2 mt-1"
                             >
                                 ShopEase
                             </h4>
                             <h3
-                                class="text-xl font-semibold mb-2"
+                                class="text-lg font-semibold mb-2"
                                 id="task-title"
                             >
                                 Fix mobile button issue
@@ -169,7 +171,7 @@
                             </div>
 
                             <div
-                                class="flex justify-between items-center pt-3 border-dashed border-t-2 border-slate-200"
+                                class="flex justify-between items-center pt-3 border-dashed border-t-2 border-slate-300"
                             >
                                 <div>
                                     <h3 class="text-xs">Deadline</h3>
@@ -179,7 +181,7 @@
                                 </div>
 
                                 <button
-                                    class="bg-[#3752FD] rounded-xl px-4 py-2 text-sm text-white hover:bg-[#1F38D3]"
+                                    class="bg-[#3752FD] rounded-lg px-3 py-2 text-xs text-white hover:bg-[#1F38D3]"
                                     id="complete-btn"
                                 >
                                     Completed
@@ -187,14 +189,14 @@
                             </div>
                         </div>
 
-                        <div class="bg-[#F4F7FF] rounded-xl px-4 py-2">
+                        <div class="bg-[#e7edfc] rounded-xl px-4 py-2">
                             <h4
                                 class="text-xs py-2 bg-white rounded-xl w-24 text-center mb-2 mt-1"
                             >
                                 CloudSync
                             </h4>
                             <h3
-                                class="text-xl font-semibold mb-2"
+                                class="text-lg font-semibold mb-2"
                                 id="task-title"
                             >
                                 Add Dark Mode
@@ -208,7 +210,7 @@
                             </div>
 
                             <div
-                                class="flex justify-between items-center pt-3 border-dashed border-t-2 border-slate-200"
+                                class="flex justify-between items-center pt-3 border-dashed border-t-2 border-slate-300"
                             >
                                 <div>
                                     <h3 class="text-xs">Deadline</h3>
@@ -218,7 +220,7 @@
                                 </div>
 
                                 <button
-                                    class="bg-[#3752FD] rounded-xl px-4 py-2 text-sm text-white hover:bg-[#1F38D3]"
+                                    class="bg-[#3752FD] rounded-lg px-3 py-2 text-xs text-white hover:bg-[#1F38D3]"
                                     id="complete-btn"
                                 >
                                     Completed
@@ -226,14 +228,14 @@
                             </div>
                         </div>
 
-                        <div class="bg-[#F4F7FF] rounded-xl px-4 py-2">
+                        <div class="bg-[#e7edfc] rounded-xl px-4 py-2">
                             <h4
                                 class="text-xs py-2 bg-white rounded-xl w-24 text-center mb-2 mt-1"
                             >
                                 SwiftPay
                             </h4>
                             <h3
-                                class="text-xl font-semibold mb-2"
+                                class="text-lg font-semibold mb-2"
                                 id="task-title"
                             >
                                 Optimize Home page
@@ -248,7 +250,7 @@
                             </div>
 
                             <div
-                                class="flex justify-between items-center pt-3 border-dashed border-t-2 border-slate-200"
+                                class="flex justify-between items-center pt-3 border-dashed border-t-2 border-slate-300"
                             >
                                 <div>
                                     <h3 class="text-xs">Deadline</h3>
@@ -258,7 +260,7 @@
                                 </div>
 
                                 <button
-                                    class="bg-[#3752FD] rounded-xl px-4 py-2 text-sm text-white hover:bg-[#1F38D3]"
+                                    class="bg-[#3752FD] rounded-lg px-3 py-2 text-xs text-white hover:bg-[#1F38D3]"
                                     id="complete-btn"
                                 >
                                     Completed
@@ -266,14 +268,14 @@
                             </div>
                         </div>
 
-                        <div class="bg-[#F4F7FF] rounded-xl px-4 py-2">
+                        <div class="bg-[#e7edfc] rounded-xl px-4 py-2">
                             <h4
                                 class="text-xs py-2 bg-white rounded-xl w-24 text-center mb-2 mt-1"
                             >
                                 Meta
                             </h4>
                             <h3
-                                class="text-xl font-semibold mb-2"
+                                class="text-lg font-semibold mb-2"
                                 id="task-title"
                             >
                                 Add new emoji 🤲
@@ -288,7 +290,7 @@
                             </div>
 
                             <div
-                                class="flex justify-between items-center pt-3 border-dashed border-t-2 border-slate-200"
+                                class="flex justify-between items-center pt-3 border-dashed border-t-2 border-slate-300"
                             >
                                 <div>
                                     <h3 class="text-xs">Deadline</h3>
@@ -298,7 +300,7 @@
                                 </div>
 
                                 <button
-                                    class="bg-[#3752FD] rounded-xl px-4 py-2 text-sm text-white hover:bg-[#1F38D3]"
+                                    class="bg-[#3752FD] rounded-lg px-3 py-2 text-xs text-white hover:bg-[#1F38D3]"
                                     id="complete-btn"
                                 >
                                     Completed
@@ -306,14 +308,14 @@
                             </div>
                         </div>
 
-                        <div class="bg-[#F4F7FF] rounded-xl px-4 py-2">
+                        <div class="bg-[#e7edfc] rounded-xl px-4 py-2">
                             <h4
                                 class="text-xs py-2 bg-white rounded-xl w-24 text-center mb-2 mt-1"
                             >
                                 Google LLC
                             </h4>
                             <h3
-                                class="text-xl font-semibold mb-2"
+                                class="text-lg font-semibold mb-2"
                                 id="task-title"
                             >
                                 Integrate OpenAI API
@@ -328,7 +330,7 @@
                             </div>
 
                             <div
-                                class="flex justify-between items-center pt-3 border-dashed border-t-2 border-slate-200"
+                                class="flex justify-between items-center pt-3 border-dashed border-t-2 border-slate-300"
                             >
                                 <div>
                                     <h3 class="text-xs">Deadline</h3>
@@ -338,7 +340,7 @@
                                 </div>
 
                                 <button
-                                    class="bg-[#3752FD] rounded-xl px-4 py-2 text-sm text-white hover:bg-[#1F38D3]"
+                                    class="bg-[#3752FD] rounded-lg px-3 py-2 text-xs text-white hover:bg-[#1F38D3]"
                                     id="complete-btn"
                                 >
                                     Completed
@@ -346,14 +348,14 @@
                             </div>
                         </div>
 
-                        <div class="bg-[#F4F7FF] rounded-xl px-4 py-2">
+                        <div class="bg-[#e7edfc] rounded-xl px-4 py-2">
                             <h4
                                 class="text-xs py-2 bg-white rounded-xl w-24 text-center mb-2 mt-1"
                             >
                                 Glassdoar
                             </h4>
                             <h3
-                                class="text-xl font-semibold mb-2"
+                                class="text-lg font-semibold mb-2"
                                 id="task-title"
                             >
                                 Improve Job searching
@@ -368,7 +370,7 @@
                             </div>
 
                             <div
-                                class="flex justify-between items-center pt-3 border-dashed border-t-2 border-slate-200"
+                                class="flex justify-between items-center pt-3 border-dashed border-t-2 border-slate-300"
                             >
                                 <div>
                                     <h3 class="text-xs">Deadline</h3>
@@ -378,7 +380,7 @@
                                 </div>
 
                                 <button
-                                    class="bg-[#3752FD] rounded-xl px-4 py-2 text-sm text-white hover:bg-[#1F38D3]"
+                                    class="bg-[#3752FD] rounded-lg px-3 py-2 text-xs text-white hover:bg-[#1F38D3]"
                                     id="complete-btn"
                                 >
                                     Completed
@@ -391,10 +393,10 @@
                 <!-- Right Side -->
                 <div class="bg-white rounded-2xl w-full md:w-[25%]">
                     <div
-                        class="flex items-center flex-col gap-4 py-5 border-b-2 border-dashed border-slate-200"
+                        class="flex items-center flex-col gap-2 py-4 border-b-2 border-dashed border-slate-300"
                     >
                         <div class="flex items-center gap-3">
-                            <div class="w-6 h-6">
+                            <div class="w-5 h-5">
                                 <img
                                     src="./asset/activity.png"
                                     alt="Activity"
@@ -408,7 +410,7 @@
                         <div>
                             <button
                                 onclick="clearHistory()"
-                                class="bg-[#3752FD] rounded-xl px-4 py-2 text-sm text-white hover:bg-[#1F38D3]"
+                                class="bg-[#3752FD] rounded-lg px-3 py-2 text-xs text-white hover:bg-[#1F38D3]"
                             >
                                 Clear history
                             </button>
